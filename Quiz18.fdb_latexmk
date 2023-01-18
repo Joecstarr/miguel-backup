@@ -1,12 +1,12 @@
 # Fdb version 3
-["lualatex"] 1674024993 "c:/Users/joecs/Documents/miguel_coverage/Quiz18.tex" "c:/Users/joecs/Documents/miguel_coverage/Quiz18.pdf" "Quiz18" 1674024998
+["lualatex"] 1674025928 "c:/Users/joecs/Documents/miguel_coverage/Quiz18.tex" "c:/Users/joecs/Documents/miguel_coverage/Quiz18.pdf" "Quiz18" 1674026013
   "C:/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmroman10-regular.luc" 1632185712 123152 7ccb50557006e78081f342b10178bdc5 ""
   "C:/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmroman17-regular.luc" 1651698141 124738 7c07d8c38156ca98807055464200c5d6 ""
   "C:/texlive/2020/texmf-var/luatex-cache/generic-dev/names/luaotfload-names.luc" 1631936789 1177191 01590c7e6a80cc518131c7f72cffd911 ""
-  "Quiz18.aux" 1674024997 43 0a6ade4f027f9d564f6341465efa0b40 "lualatex"
-  "Quiz18.tex" 1674024992 19291 43ec9756844d0e03c9692ce37af9172b ""
-  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.aux" 1674024997 43 0a6ade4f027f9d564f6341465efa0b40 ""
-  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.tex" 1674024992 19291 43ec9756844d0e03c9692ce37af9172b ""
+  "Quiz18.aux" 1674025936 43 0a6ade4f027f9d564f6341465efa0b40 "lualatex"
+  "Quiz18.tex" 1674026012 28566 413c060e7e4230cc34075bdf47bd675d ""
+  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.aux" 1674025936 43 0a6ade4f027f9d564f6341465efa0b40 ""
+  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.tex" 1674026012 28566 413c060e7e4230cc34075bdf47bd675d ""
   "c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf" 1594445841 110248 0524e9fd4e00179f5d95f2bba63c8192 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1594435539 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1594435539 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -279,8 +279,8 @@
   "c:/texlive/2020/texmf-var/web2c/luahbtex/lualatex.fmt" 1594449298 2675433 2f7e83127fee02578c28d04b0889ccf1 ""
   "draculatheme.sty" 1674021464 705 8a3eed17f534612fa68d6922643e8eb3 ""
   (generated)
-  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.pdf"
   "Quiz18.pdf"
-  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.log"
-  "Quiz18.aux"
   "Quiz18.log"
+  "Quiz18.aux"
+  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.pdf"
+  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.log"
