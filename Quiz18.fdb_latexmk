@@ -1,12 +1,12 @@
 # Fdb version 3
-["lualatex"] 1674071721 "c:/Users/joecs/Documents/miguel_coverage/Quiz18.tex" "c:/Users/joecs/Documents/miguel_coverage/Quiz18.pdf" "Quiz18" 1674071750
+["lualatex"] 1674071764 "c:/Users/joecs/Documents/miguel_coverage/Quiz18.tex" "c:/Users/joecs/Documents/miguel_coverage/Quiz18.pdf" "Quiz18" 1674071771
   "C:/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmroman10-regular.luc" 1632185712 123152 7ccb50557006e78081f342b10178bdc5 ""
   "C:/texlive/2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmroman17-regular.luc" 1651698141 124738 7c07d8c38156ca98807055464200c5d6 ""
   "C:/texlive/2020/texmf-var/luatex-cache/generic-dev/names/luaotfload-names.luc" 1631936789 1177191 01590c7e6a80cc518131c7f72cffd911 ""
-  "Quiz18.aux" 1674071727 43 0a6ade4f027f9d564f6341465efa0b40 "lualatex"
-  "Quiz18.tex" 1674071749 33083 82be66f0e0b9af19cd4a6d0213488676 ""
-  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.aux" 1674071727 43 0a6ade4f027f9d564f6341465efa0b40 ""
-  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.tex" 1674071749 33083 82be66f0e0b9af19cd4a6d0213488676 ""
+  "Quiz18.aux" 1674071771 43 0a6ade4f027f9d564f6341465efa0b40 "lualatex"
+  "Quiz18.tex" 1674071761 33093 2a3177739101aecd375bfe4dc3c39a66 ""
+  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.aux" 1674071771 43 0a6ade4f027f9d564f6341465efa0b40 ""
+  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.tex" 1674071761 33093 2a3177739101aecd375bfe4dc3c39a66 ""
   "c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf" 1594445841 110248 0524e9fd4e00179f5d95f2bba63c8192 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1594435539 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1594435539 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -283,7 +283,7 @@
   "onion.jpeg" 1674067690 6950 b7a9342f0e49a25b19bf7b098b32786f ""
   (generated)
   "Quiz18.log"
-  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.log"
   "c:/Users/joecs/Documents/miguel_coverage/Quiz18.pdf"
-  "Quiz18.aux"
   "Quiz18.pdf"
+  "Quiz18.aux"
+  "c:/Users/joecs/Documents/miguel_coverage/Quiz18.log"
