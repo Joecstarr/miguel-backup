@@ -6,7 +6,8 @@
 \usepackage{mathtools}
 \usepackage{tikz}
 \usepackage{pgfplots}
-
+% \usepackage{sectsty}
+\setlength{\parindent}{0pt}
 \usetikzlibrary{fit, shapes}
 \pgfdeclarelayer{background}
 \pgfsetlayers{background,main}
@@ -18,6 +19,9 @@
 \usepackage{tikz-cd}
 \usepackage[paperwidth=400mm,paperheight=300mm,left=10mm,right=150mm, top=10mm, bottom=10mm]{geometry}
 \usepackage{draculatheme}
+\usepackage[doublespacing]{setspace}
+
+% \sectionfont{\color{draculaorange}}  % sets colour of sections
 
 %Control layout of itemize, enumerate, description (https://ctan.org/pkg/enumitem?lang=en)
 \usepackage[shortlabels]{enumitem}
@@ -36,8 +40,6 @@
           }
   \end{tikzpicture}
 }
-
-
 \newcommand{\m}{\scalebox{0.5}[1.0]{$-$}}
 \newcommand{\LP}{\left(}
 \newcommand{\RP}{\right)}
@@ -47,6 +49,10 @@
 \newcommand{\RB}{\right]}
 \newcommand{\MM}{\ \middle|\ }
 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
 \begin{document}
 % \topmargin=-1cm
 % \textwidth=170truemm
@@ -72,17 +78,18 @@
 % \rhead{MATH:1005}
 % \lhead{Name:\hskip2in ID:}
 \noindent
-\section*{Types of Functions}
+\section*{\textbf{\color{draculaorange}Types of Functions}}
 \vskip0.7cm
-\subsection*{Piecewise Functions}
+\subsection*{\textbf{\color{draculaorange}Piecewise Functions}}
 \vskip0.7cm
-\subsection*{Notation}
+\subsection*{\textbf{\color{draculaorange}Notation}}
 \[f(x)=\begin{cases}
   \text{function},&\text{condition}\\
   \vdots&\vdots\\
   \text{function},&\text{condition}\\
 \end{cases}\]
-\subsection*{Example:}
+\newpage
+\subsection*{\textbf{\color{draculared}Example:}}
 
 \begin{tikzpicture}
   \draw[very thin,color=draculacomment] (-0.1,-0.1) grid (17,7);
@@ -103,7 +110,7 @@
   \frac{3}{5}x,&(6,9]\\
   -x,&(9,15]\\
 \end{cases}\]
-\subsection*{Example:}
+\subsection*{\textbf{\color{draculared}Example:}}
 \begin{tikzpicture}[scale=3]
   \begin{axis} [
     domain=-10:10,
@@ -141,8 +148,8 @@
 %   % \x r means to convert '\x' from degrees to _r_adians:
 % \end{tikzpicture}
 \newpage
-\subsection*{Absolute Value}
-\subsection*{Example:}
+\subsection*{\textbf{\color{draculaorange}Absolute Value}}
+\subsection*{\textbf{\color{draculared}Example:}}
 \begin{tikzpicture}[scale=3]
   \begin{axis} [
     domain=-10:10,
@@ -166,7 +173,7 @@
   \end{axis}
 \end{tikzpicture}
 \newpage
-\subsection*{Example:}
+\subsection*{\textbf{\color{draculared}Example:}}
 \begin{tikzpicture}[scale=3]
   \begin{axis} [
     domain=-13:13,
@@ -204,17 +211,17 @@
     axis line style={latex-latex},
     ticklabel style={font=\tiny},
 ]
-\addplot [domain=-13:13,color=draculared,samples=100, smooth, thick] { sin(x r)};
-\addplot [domain=-13:13,color=draculacyan,samples=100, smooth, thin] { abs(sin(x r))};
+\addplot [domain=-13:13,color=draculared,samples=200, smooth, thick] { sin(x r)};
+\addplot [domain=-13:13,color=draculacyan,samples=800, smooth, thin] { abs(sin(x r))};
 % \addplot [domain=-10:10,color=draculacyan, smooth, thin] { x};
     % \addplot[color=draculacyan,only marks,mark=*] coordinates{(2,2)};
     % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
   \end{axis}
 \end{tikzpicture}
 \newpage
-\subsection*{Even and Odd}
+\subsection*{\textbf{\color{draculaorange}Even and Odd}}
 \vskip0.7cm
-\subsection*{Definition:}
+\subsection*{\textbf{\color{draculaorange}Definition:}}
 A function \(f(x)\) is called:
 \begin{itemize}[align=left]
   \item[Even:] {If \(\forall x \in D\) we have \(f(\m x)=f(x)\)}
@@ -224,7 +231,7 @@ A function \(f(x)\) is called:
   \item[Neither:] {\(\ \)}
 \end{itemize}
 \vskip2cm
-\subsection*{Symmetries:}
+\subsection*{\textbf{\color{draculaorange}Symmetries:}}
 \begin{itemize}[align=left]
   \item[Even:] {\(\ \)}
   \vskip0.7cm
@@ -300,16 +307,16 @@ A function \(f(x)\) is called:
 \end{tikzpicture}
 \newpage
 \newpage
-\subsection*{Increasing Decreasing}
+\subsection*{\textbf{\color{draculaorange}Increasing Decreasing}}
 \vskip0.7cm
-\subsection*{Definition:}
+\subsection*{\textbf{\color{draculaorange}Definition:}}
 A function \(f(x)\) on an inteval \(I\) is called:
 \begin{itemize}[align=left]
   \item[Increasing:] {\(\forall a,b \in I\) if \(a<b\) then \(f(a)<f(b)\)}
   \vskip0.7cm
   \item[Decreasing:] {\(\forall a,b \in I\) if \(a<b\) then \(f(a)>f(b)\)}
 \end{itemize}
-\begin{tikzpicture}[scale=1.3]
+\begin{tikzpicture}[scale=1.5]
   \begin{axis} [
     domain=-10:10,
     xmin=-10, xmax=10,
@@ -330,7 +337,7 @@ A function \(f(x)\) on an inteval \(I\) is called:
     % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
   \end{axis}
 \end{tikzpicture}
-\begin{tikzpicture}[scale=1.3]
+\begin{tikzpicture}[scale=1.5]
   \begin{axis} [
     domain=-10:10,
     xmin=-10, xmax=10,
@@ -371,43 +378,40 @@ A function \(f(x)\) on an inteval \(I\) is called:
     % xticklabels={,,}
 ]
   \addplot [domain=-10:-5,color=draculacyan, smooth, thick] { x};
-  \addplot [domain=-5:-2,color=draculared, smooth, thick] { (x+5)^2-5};
-  \addplot [domain=-2:1,color=draculacyan, smooth, thick] { 4};
-  \addplot [domain=1:3,color=draculared, smooth, thick] { -(x-1)^3+4};
-  \addplot [domain=3:4,color=draculacyan, smooth, thick] { (x-3)-4};
+  \addplot [domain=-5:-2,color=draculagreen, smooth, thick] { (x+5)^2-5};
+  \addplot [domain=-2:1,color=draculaorange, smooth, thick] { 4};
+  \addplot [domain=1:3,color=draculapink, smooth, thick] { -(x-1)^3+4};
+  \addplot [domain=3:4,color=draculapurple, smooth, thick] { (x-3)-4};
   \addplot [domain=4:5,color=draculared, smooth, thick] { -(x-4)-3};
-  \addplot [domain=5:10,color=draculacyan, smooth, thick] { (x-5)^2-4};
+  \addplot [domain=5:10,color=draculayellow, smooth, thick] { (x-5)^2-4};
     % \addplot[color=draculacyan,only marks,mark=*] coordinates{(2,2)};
     % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
   \end{axis}
 \end{tikzpicture}
 \newpage
 
-  \begin{tikzpicture}[scale=2]
-    \begin{axis} [
-    domain=-10:10,
-    xmin=-10, xmax=10,
-    ymin=-10, ymax=10,
-    grid=both,
-    % grid style={line width=.08pt, draw=draculacomment!80},
-    major grid style={line width=.5pt,draw=draculacomment},
-    minor grid style={line width=.08pt,draw=draculacomment!80},
-    axis lines=middle,
-    minor tick num=4,
-    enlargelimits={abs=0.5},
-    axis line style={latex-latex},
-    ticklabel style={font=\tiny},
-    % yticklabels={,,},
-    % xticklabels={,,}
-]
-      \addplot [domain=-10:10,color=draculacyan, smooth, thick,<->] { 1 };
-    \end{axis}
-  \end{tikzpicture}
+%   \begin{tikzpicture}[scale=2]
+%     \begin{axis} [
+%     domain=-10:10,
+%     xmin=-10, xmax=10,
+%     ymin=-10, ymax=10,
+%     grid=both,
+%     % grid style={line width=.08pt, draw=draculacomment!80},
+%     major grid style={line width=.5pt,draw=draculacomment},
+%     minor grid style={line width=.08pt,draw=draculacomment!80},
+%     axis lines=middle,
+%     minor tick num=4,
+%     enlargelimits={abs=0.5},
+%     axis line style={latex-latex},
+%     ticklabel style={font=\tiny},
+%     % yticklabels={,,},
+%     % xticklabels={,,}
+% ]
+%       \addplot [domain=-10:10,color=draculacyan, smooth, thick,<->] { 1 };
+%     \end{axis}
+%   \end{tikzpicture}
 \newpage
-
-
-
-  \section*{"Parent" Fucntions}
+\section*{\textbf{\color{draculaorange}"Parent" Functions}}
   \begin{tikzpicture}[scale=2]
     \begin{axis} [
     domain=-10:10,
@@ -428,10 +432,7 @@ A function \(f(x)\) on an inteval \(I\) is called:
       \addplot [domain=-10:10,color=draculacyan, smooth, thick, <->] { x };
     \end{axis}
   \end{tikzpicture}
-
-
-
-  \begin{tikzpicture}[scale=2]
+\begin{tikzpicture}[scale=2]
     \begin{axis} [
     domain=-10:10,
     xmin=-10, xmax=10,
@@ -474,10 +475,7 @@ A function \(f(x)\) on an inteval \(I\) is called:
           \addplot [domain=0:10,color=draculacyan, smooth, samples=200, thick, ->] { sqrt(x) };
     \end{axis}
   \end{tikzpicture}
-
-
-
-  \begin{tikzpicture}[scale=2]
+\begin{tikzpicture}[scale=2]
     \begin{axis} [
     domain=-10:10,
     xmin=-10, xmax=10,
@@ -497,10 +495,7 @@ A function \(f(x)\) on an inteval \(I\) is called:
           \addplot [domain=-10:10,color=draculacyan, smooth, thick, <->] { x^2 };
     \end{axis}
   \end{tikzpicture}
-
-
-
-  \begin{tikzpicture}[scale=2]
+\begin{tikzpicture}[scale=2]
     \begin{axis} [
     domain=-10:10,
     xmin=-10, xmax=10,
@@ -520,10 +515,7 @@ A function \(f(x)\) on an inteval \(I\) is called:
           \addplot [domain=-10:10,color=draculacyan, smooth, thick, <->] { x^3 };
     \end{axis}
   \end{tikzpicture}
-
-
-
-  \begin{tikzpicture}[scale=2]
+\begin{tikzpicture}[scale=2]
     \begin{axis} [
     domain=-10:10,
     xmin=-10, xmax=10,
@@ -544,10 +536,7 @@ A function \(f(x)\) on an inteval \(I\) is called:
       \addplot [domain=-10:-0.034,color=draculacyan, smooth, samples = 200, thick, <->] { 1/x };
     \end{axis}
   \end{tikzpicture}
-
-
-
-  \begin{tikzpicture}[scale=2]
+\begin{tikzpicture}[scale=2]
     \begin{axis} [
     domain=-10:10,
     xmin=-10, xmax=10,
@@ -568,8 +557,6 @@ A function \(f(x)\) on an inteval \(I\) is called:
       \addplot [domain=-10:-.058,color=draculacyan, samples = 200, thick, <->] { 1/(x^2) };
     \end{axis}
   \end{tikzpicture}
-
-
   \begin{tikzpicture}[scale=2]
     \begin{axis} [
     domain=-5:5,
@@ -591,11 +578,11 @@ A function \(f(x)\) on an inteval \(I\) is called:
     \end{axis}
   \end{tikzpicture}
 \newpage
-\section*{Translation of functions}
-\subsection*{Shifts:}
+\section*{\textbf{\color{draculaorange}Translation of functions}}
+\subsection*{\textbf{\color{draculaorange}Shifts:}}
 \begin{itemize}[align=left]
   \item[\underline{\hspace{3cm}}:] {\(f(x)\to f(x-c)\)\\
-  \begin{tikzpicture}[scale=1.3]
+  \begin{tikzpicture}[scale=1.5]
     \begin{axis} [
       domain=-10:10,
       xmin=-10, xmax=10,
@@ -611,14 +598,15 @@ A function \(f(x)\) on an inteval \(I\) is called:
       yticklabels={,,},
       xticklabels={,,}
   ]
-  % \addplot [domain=-10:10,color=draculacyan, smooth, thin] { x};
+  \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x^2};
+  \addplot [domain=-10:10,color=draculared, smooth, thick] { (x-2)^2};
       % \addplot[color=draculacyan,only marks,mark=*] coordinates{(2,2)};
       % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
     \end{axis}
   \end{tikzpicture}}
   \vskip0.7cm
   \item[\underline{\hspace{3cm}}:] {\(f(x)\to f(x+c)\)\\
-  \begin{tikzpicture}[scale=1.3]
+  \begin{tikzpicture}[scale=1.5]
     \begin{axis} [
       domain=-10:10,
       xmin=-10, xmax=10,
@@ -634,14 +622,16 @@ A function \(f(x)\) on an inteval \(I\) is called:
       yticklabels={,,},
       xticklabels={,,}
   ]
-  % \addplot [domain=-10:10,color=draculacyan, smooth, thin] { x};
+  \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x^2};
+  \addplot [domain=-10:10,color=draculared, smooth, thick] { (x+2)^2};
+  % \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x};
       % \addplot[color=draculacyan,only marks,mark=*] coordinates{(2,2)};
       % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
     \end{axis}
   \end{tikzpicture}}
   \newpage
   \item[\underline{\hspace{3cm}}:] {\(f(x)\to f(x)-c\)\\
-  \begin{tikzpicture}[scale=1.3]
+  \begin{tikzpicture}[scale=1.5]
     \begin{axis} [
       domain=-10:10,
       xmin=-10, xmax=10,
@@ -657,14 +647,16 @@ A function \(f(x)\) on an inteval \(I\) is called:
       yticklabels={,,},
       xticklabels={,,}
   ]
-  % \addplot [domain=-10:10,color=draculacyan, smooth, thin] { x};
+  \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x^2};
+  \addplot [domain=-10:10,color=draculared, smooth, thick] { (x)^2-6};
+  % \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x};
       % \addplot[color=draculacyan,only marks,mark=*] coordinates{(2,2)};
       % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
     \end{axis}
   \end{tikzpicture}}
   \vskip0.7cm
   \item[\underline{\hspace{3cm}}:] {\(f(x)\to f(x)+c\)\\
-  \begin{tikzpicture}[scale=1.3]
+  \begin{tikzpicture}[scale=1.5]
     \begin{axis} [
       domain=-10:10,
       xmin=-10, xmax=10,
@@ -680,18 +672,20 @@ A function \(f(x)\) on an inteval \(I\) is called:
       yticklabels={,,},
       xticklabels={,,}
   ]
-  % \addplot [domain=-10:10,color=draculacyan, smooth, thin] { x};
+  \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x^2};
+  \addplot [domain=-10:10,color=draculared, smooth, thick] { (x)^2+6};
+  % \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x};
       % \addplot[color=draculacyan,only marks,mark=*] coordinates{(2,2)};
       % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
     \end{axis}
   \end{tikzpicture}}
 \end{itemize}
 \newpage
-\subsection*{Stretching and reflection:}
+\subsection*{\textbf{\color{draculaorange}Stretching and reflection:}}
 For \(1<c\)
 \begin{itemize}[align=left]
   \item[\underline{\hspace{3cm}}:] {\(f(x)\to f(cx)\)\\
-  \begin{tikzpicture}[scale=1.3]
+  \begin{tikzpicture}[scale=1.5]
     \begin{axis} [
       domain=-10:10,
       xmin=-10, xmax=10,
@@ -707,14 +701,16 @@ For \(1<c\)
       yticklabels={,,},
       xticklabels={,,}
   ]
-  % \addplot [domain=-10:10,color=draculacyan, smooth, thin] { x};
+  \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x^2};
+  \addplot [domain=-10:10,color=draculared, smooth, thick] { (3*x)^2};
+  % \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x};
       % \addplot[color=draculacyan,only marks,mark=*] coordinates{(2,2)};
       % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
     \end{axis}
   \end{tikzpicture}}
   \vskip0.7cm
   \item[\underline{\hspace{3cm}}:] {\(f(x)\to f(\frac{1}{c}x)\)\\
-  \begin{tikzpicture}[scale=1.3]
+  \begin{tikzpicture}[scale=1.5]
     \begin{axis} [
       domain=-10:10,
       xmin=-10, xmax=10,
@@ -730,14 +726,17 @@ For \(1<c\)
       yticklabels={,,},
       xticklabels={,,}
   ]
-  % \addplot [domain=-10:10,color=draculacyan, smooth, thin] { x};
+
+  \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x^2};
+  \addplot [domain=-10:10,color=draculared, smooth, thick] { (x/3)^2};
+  % \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x};
       % \addplot[color=draculacyan,only marks,mark=*] coordinates{(2,2)};
       % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
     \end{axis}
   \end{tikzpicture}}
   \newpage
   \item[\underline{\hspace{3cm}}:] {\(f(x)\to cf(x)\)\\
-  \begin{tikzpicture}[scale=1.3]
+  \begin{tikzpicture}[scale=1.5]
     \begin{axis} [
       domain=-10:10,
       xmin=-10, xmax=10,
@@ -753,14 +752,16 @@ For \(1<c\)
       yticklabels={,,},
       xticklabels={,,}
   ]
-  % \addplot [domain=-10:10,color=draculacyan, smooth, thin] { x};
+  \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x^2};
+  \addplot [domain=-10:10,color=draculared, smooth, thick] { 6*(x)^2};
+  % \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x};
       % \addplot[color=draculacyan,only marks,mark=*] coordinates{(2,2)};
       % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
     \end{axis}
   \end{tikzpicture}}
   \vskip0.7cm
   \item[\underline{\hspace{3cm}}:] {\(f(x)\to \frac{1}{c}f(x)\)\\
-  \begin{tikzpicture}[scale=1.3]
+  \begin{tikzpicture}[scale=1.5]
     \begin{axis} [
       domain=-10:10,
       xmin=-10, xmax=10,
@@ -776,13 +777,15 @@ For \(1<c\)
       yticklabels={,,},
       xticklabels={,,}
   ]
-  % \addplot [domain=-10:10,color=draculacyan, smooth, thin] { x};
+  \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x^2};
+  \addplot [domain=-10:10,color=draculared, smooth, thick] { ((x)^2)/6};
+  % \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x};
       % \addplot[color=draculacyan,only marks,mark=*] coordinates{(2,2)};
       % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
     \end{axis}
   \end{tikzpicture}}
   \item[\underline{\hspace{3cm}}:] {\(f(x)\to -f(x)\)\\
-  \begin{tikzpicture}[scale=1.3]
+  \begin{tikzpicture}[scale=1.5]
     \begin{axis} [
       domain=-10:10,
       xmin=-10, xmax=10,
@@ -798,13 +801,15 @@ For \(1<c\)
       yticklabels={,,},
       xticklabels={,,}
   ]
-  % \addplot [domain=-10:10,color=draculacyan, smooth, thin] { x};
+  \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x^2};
+  \addplot [domain=-10:10,color=draculared, smooth, thick] { -(x)^2};
+  % \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x};
       % \addplot[color=draculacyan,only marks,mark=*] coordinates{(2,2)};
       % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
     \end{axis}
   \end{tikzpicture}}
   \item[\underline{\hspace{3cm}}:] {\(f(x)\to f(-x)\)\\
-  \begin{tikzpicture}[scale=1.3]
+  \begin{tikzpicture}[scale=1.5]
     \begin{axis} [
       domain=-10:10,
       xmin=-10, xmax=10,
@@ -820,7 +825,9 @@ For \(1<c\)
       yticklabels={,,},
       xticklabels={,,}
   ]
-  % \addplot [domain=-10:10,color=draculacyan, smooth, thin] { x};
+  \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x^3};
+  \addplot [domain=-10:10,color=draculared, smooth, thin] { (-x)^3};
+  % \addplot [domain=-10:10,color=draculacyan, smooth, thick] { x};
       % \addplot[color=draculacyan,only marks,mark=*] coordinates{(2,2)};
       % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
     \end{axis}
@@ -829,12 +836,90 @@ For \(1<c\)
 
 \newpage
 
-\section*{Function Arithmetic}
+\section*{\textbf{\color{draculaorange}Function Arithmetic}}
 \begin{itemize}
   \item[]{\(\LP f+g\RP (x)=f(x)+g(x)\)}
   \item[]{\(\LP f-g\RP (x)=f(x)-g(x)\)}
   \item[]{\(\LP f\cdot g\RP (x)=f(x)\cdot g(x)\)}
   \item[]{\(\LP \frac{f}{g}\RP (x)=\frac{f(x)}{g(x)}\)}
 \end{itemize}
+\subsection*{\textbf{\color{draculared}\textbf{Example:}}}
+If we let \(f(x)=x^2\) and \(g(x)=4x^3\)
+\begin{itemize}[align=left]
+  \item[\(\LP f+g\RP (x)=\)]{\underline{\hspace{5cm}}}
+  \item[\(\LP f-g\RP (x)=\)]{\underline{\hspace{5cm}}}
+  \item[\(\LP f\cdot g\RP (x)=\)]{\underline{\hspace{5cm}}}
+  \item[\(\LP \frac{f}{g}\RP (x)=\)]{\underline{\hspace{5cm}}}
+\end{itemize}
+\newpage
+\subsection*{\textbf{\color{draculaorange}Domain}}
+\subsubsection*{\textbf{\color{draculaorange}Addition, multiplication \(+\ -\ \cdot\)}}
+The domain of $f+g$, $f-g$, and $f\cdot g$ is the intersection of the domains of $f$ and $g$. In other words, $f+g$, $f-g$, and $f\cdot g$ are defined wherever both $f$ and $g$ are defined.
+\vskip6cm
+\subsubsection*{\textbf{\color{draculaorange}Division}}
+For $\frac{f}{g}$, the domain is the intersection of the domains of $f$ and $g$ excluding $x$ where $g(x)$ is 0.\\
+\vskip6cm
+\subsection*{\textbf{\color{draculaorange}Range}}
+\newpage
+
+\subsection*{\textbf{\color{draculaorange}Function Composition}}
+We let \(f(x)\) and \(g(x)\) be two functions with
+\textit{\color{draculayellow}"compatable"} domain and codomain
+\vskip4cm
+the compostion of \(f(x)\) and \(g(x)\) written \[\LP f\circ g\RP(x)\]
+is defined to be
+\[f\LP g\LP x\RP\RP\]
+\begin{center}
+  \includegraphics[height=12cm]{onion.jpeg}
+\end{center}
+\newpage
+\subsection*{\textbf{\color{draculared}Example:}}
+Let \(f(x)=x^2\) and \(g(x)=\sqrt{x}=\underline{\hspace{2cm}}\)
+\vskip4cm
+\(\LP f\circ g\RP(x)=\)\\
+\vskip8cm
+\(\LP g\circ f\RP(x)=\)\\
+\newpage
+\subsection*{\textbf{\color{draculared}Example:}}
+Let \(f(x)=x^2\) and \(g(x)=x+1\)
+\vskip4cm
+\(\LP f\circ g\RP(x)=\)\\
+\vskip8cm
+\(\LP g\circ f\RP(x)=\)\\
+\newpage
+
+\subsection*{\textbf{\color{draculaorange}Domain}}
+The domain of $f\circ g$ is all $x$ in the domain of $g$ so that $g(x)$ is in the domain of $f$.
+\vskip8cm
+
+
+\subsection*{\textbf{\color{draculacyan}Note:}}
+The easiest way to find the domain is usually to write an expression for $(f\circ g)(x)$ and find its domain without simplifying.
+
+
+
+
+\newpage
+
+\subsection*{\textbf{\color{draculared}Example:}}
+Let \(f:\R\to\R\) where \(f:x\mapsto \frac{1}{x}\), and
+\(g:\LP 0,\infty\RP\to \R\) where \(g:x\mapsto x^2\).
+\vskip4cm
+Find the domain of \(\LP f\circ g\RP(x)\):
+
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
 
 \end{document}
+

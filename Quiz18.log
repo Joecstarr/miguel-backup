@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.7.11)  18 JAN 2023 01:12
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/W32TeX)  (format=lualatex 2020.7.11)  18 JAN 2023 13:56
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/joecs/Documents/miguel_coverage/Quiz18.tex
@@ -799,6 +799,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 ) (c:/Users/joecs/Documents/miguel_coverage/draculatheme.sty
 Package: draculatheme 2021/02/26 Dracula Theme
 \GPT@outputbox=\box137
+) (c:/texlive/2020/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
 ) (c:/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip138
@@ -810,32 +812,32 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 ) (c:/Users/joecs/Documents/miguel_coverage/Quiz18.aux)
 \openout1 = Quiz18.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 56.
  (c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Trying to load font information for TU+ptm on input line 50.
-LaTeX Font Info:    No file TUptm.fd. on input line 50.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Trying to load font information for TU+ptm on input line 56.
+LaTeX Font Info:    No file TUptm.fd. on input line 56.
 
 
 LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 50.
+(Font)              using `TU/lmr/m/n' instead on input line 56.
 
 \AtBeginShipoutBox=\box139
 (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -901,46 +903,16 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 75.
+(Font)              using `TU/ptm/m/n' instead on input line 81.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
 (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 80.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 86.
  (c:/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [1
-
-{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7] [8]
-Overfull \hbox (201.94691pt too wide) in paragraph at lines 383--384
-[][] 
- []
-
-[9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] (c:/Users/joecs/Documents/miguel_coverage/Quiz18.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-)
-
-Here is how much of LuaTeX's memory you used:
- 31150 strings out of 480878
- 125171,1373583 words of node,token memory allocated
- 734 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 9 attribute, 99 glue_spec, 9 attribute_list, 2 write nodes
-   avail lists: 1:2,2:7158,3:2437,4:76,5:50,6:10,7:1565,8:22,9:320,11:15
- 47653 multiletter control sequences out of 65536+600000
- 71 fonts using 4989139 bytes
- 74i,10n,127p,875b,2393s stack positions out of 5000i,500n,10000p,200000b,100000s
-<c:/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Quiz18.pdf (20 pages, 132927 bytes).
-
-PDF statistics: 101 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 131072)
- 16 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+File: ursfs.fd 1998/03/24 rsfs font defi
