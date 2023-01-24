@@ -45,6 +45,7 @@
   \end{tikzpicture}
 }
 \newcommand{\m}{\scalebox{0.5}[1.0]{$-$}}
+\newcommand{\abs}[1]{\left|#1\right|}
 \newcommand{\LP}{\left(}
 \newcommand{\RP}{\right)}
 \newcommand{\LS}{\left\lbrace}
@@ -1177,49 +1178,285 @@
 %   \end{axis}
 % \end{tikzpicture}
 
-\section*{\textbf{\color{draculaorange}Motivating Example }}
+% \section*{\textbf{\color{draculaorange}Motivating Example }}
+% \begin{tikzpicture}[scale=4]
+%   \begin{axis} [
+%         domain=-10:10,
+%         xmin=-4, xmax=4,
+%         ymin=-10, ymax=10,
+%         grid=both,
+%         % grid style={line width=.08pt, draw=draculacomment!80},
+%         major grid style={line width=.5pt,draw=draculacomment},
+%         minor grid style={line width=.08pt,draw=draculacomment!80},
+%         axis lines=middle,
+%         % minor x tick num=3,
+%         % minor y tick num=4,
+%         enlargelimits={abs=0.5},
+%         axis line style={latex-latex},
+%         ticklabel style={font=\tiny},
+%         % yticklabels={,,},
+%         % xticklabels={,,}
+%     ]
+% \addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^2} node[left] {\(f(x)=x^2\)} ;
+% \addplot [domain=-10:10,color=draculared,samples=200, smooth, thick] { 4*x-4}  ;
+% % \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
+% % \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
+%     \addplot[color=draculared,only marks,mark=*] coordinates{(2,4)};
+%     % \addplot[color=draculapurple,only marks,mark=*] coordinates{(2,4)};
+%     % \addplot[color=draculayellow,only marks,mark=*] coordinates{(1,1)};
+%     % \addplot[color=draculagreen,only marks,mark=*] coordinates{(3,9)};
+%     % \addplot[color=draculapink,only marks,mark=*] coordinates{(1/2,1/4)};
+%     % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
+%   \end{axis}
+% \end{tikzpicture}
+% \newpage
+% \section*{\textbf{\color{draculaorange}Lines}}
+
+% \subsection*{\textbf{\color{draculaorange}Algebraic}}
+
+% \(\underline{\hspace{3cm}}=\underline{\hspace{3cm}}\cdot\underline{\hspace{3cm}}+\underline{\hspace{3cm}}\)
+% \vskip2cm
+% \subsection*{\textbf{\color{draculaorange}Geometric}}
+% \begin{tikzpicture}[scale=2]
+%   \begin{axis} [
+%         domain=-10:10,
+%         xmin=-10, xmax=10,
+%         ymin=-10, ymax=10,
+%         grid=both,
+%         % grid style={line width=.08pt, draw=draculacomment!80},
+%         major grid style={line width=.5pt,draw=draculacomment},
+%         minor grid style={line width=.08pt,draw=draculacomment!80},
+%         axis lines=middle,
+%         minor tick num=4,
+%         enlargelimits={abs=0.5},
+%         axis line style={latex-latex},
+%         ticklabel style={font=\tiny},
+%         % yticklabels={,,},
+%         % xticklabels={,,}
+%     ]
+% % \addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^3};
+% % \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
+% % \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
+%     \addplot[color=draculacyan,only marks,mark=*] coordinates{(5,1)};
+%     \addplot[color=draculacyan,only marks,mark=*] coordinates{(-2,-4)};
+%     % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
+%   \end{axis}
+% \end{tikzpicture}
+% \newpage
+% \section*{\textbf{\color{draculaorange}Secant Lines}}
+% A line between two points on the graph of a function.\\
+
+% \noindent
+% \begin{tikzpicture}[scale=3.5]
+%   \begin{axis} [
+%         domain=-10:10,
+%         xmin=-5, xmax=5,
+%         ymin=-10, ymax=10,
+%         grid=both,
+%         % grid style={line width=.08pt, draw=draculacomment!80},
+%         major grid style={line width=.5pt,draw=draculacomment},
+%         minor grid style={line width=.08pt,draw=draculacomment!80},
+%         axis lines=middle,
+%         minor x tick num=1,
+%         minor y tick num=4,
+%         enlargelimits={abs=0.5},
+%         axis line style={latex-latex},
+%         ticklabel style={font=\tiny},
+%         % yticklabels={,,},
+%         % xticklabels={,,}
+%     ]
+% \addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^3-4*x};
+% % \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
+% % \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
+%     \addplot[color=draculared,only marks,mark=*] coordinates{(-2,0)};
+%     \addplot[color=draculapurple,only marks,mark=*] coordinates{(2,0)};
+%     \addplot[color=draculapurple,only marks,mark=*] coordinates{(-2/3^.5,16*3^.5*9^-1)};
+%     \addplot[color=draculapurple,only marks,mark=*] coordinates{(2/3^.5,-16*3^.5*9^-1)};
+%     % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
+%   \end{axis}
+% \end{tikzpicture}
+% \newpage
+% \subsection*{\textbf{\color{draculared}Example:}}
+% \noindent
+% \begin{tikzpicture}[scale=4]
+%   \begin{axis} [
+%         domain=-10:10,
+%         xmin=-4, xmax=4,
+%         ymin=-10, ymax=10,
+%         grid=both,
+%         % grid style={line width=.08pt, draw=draculacomment!80},
+%         major grid style={line width=.5pt,draw=draculacomment},
+%         minor grid style={line width=.08pt,draw=draculacomment!80},
+%         axis lines=middle,
+%         minor x tick num=3,
+%         minor y tick num=4,
+%         enlargelimits={abs=0.5},
+%         axis line style={latex-latex},
+%         ticklabel style={font=\tiny},
+%         % yticklabels={,,},
+%         % xticklabels={,,}
+%     ]
+% \addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^2} node[left] {\(f(x)=x^2\)} ;
+% % \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
+% % \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
+%     \addplot[color=draculared,only marks,mark=*] coordinates{(0,0)};
+%     \addplot[color=draculapurple,only marks,mark=*] coordinates{(2,4)};
+%     \addplot[color=draculayellow,only marks,mark=*] coordinates{(1,1)};
+%     \addplot[color=draculagreen,only marks,mark=*] coordinates{(3,9)};
+%     \addplot[color=draculapink,only marks,mark=*] coordinates{(1/2,1/4)};
+%     % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
+%   \end{axis}
+% \end{tikzpicture}
+
+% \subsection*{\textbf{\color{draculaorange}Pattern}}
+
+% Do the slopes have any pattern?
+
+% \vskip3cm
+
+% \subsubsection*{\textbf{\color{draculaorange}Algebra}}
+
+% How do we write the rule as an ordered pair?
+% \[\LP\ \underline{\hspace{3cm}}\ ,\ \underline{\hspace{3cm}}\ \RP \]
+% \[\LP\ \underline{\hspace{3cm}}\ ,\ \underline{\hspace{3cm}}\ \RP \]
+
+% If we write:
+% \[P=\LP\ 0\ ,\ 0\ \RP \]
+% \[Q=\LP\ \underline{\hspace{3cm}}\ ,\ \underline{\hspace{3cm}}\ \RP \]
+% What is the slope for the line between \(P\) and \(Q\)? \(\underline{\hspace{3cm}}\)
+% What have we done geometrically?
+% \newpage
+
+% \begin{tikzpicture}[scale=4]
+%   \begin{axis} [
+%         domain=-10:10,
+%         xmin=-4, xmax=4,
+%         ymin=-10, ymax=10,
+%         grid=both,
+%         % grid style={line width=.08pt, draw=draculacomment!80},
+%         major grid style={line width=.5pt,draw=draculacomment},
+%         minor grid style={line width=.08pt,draw=draculacomment!80},
+%         axis lines=middle,
+%         minor x tick num=3,
+%         minor y tick num=4,
+%         enlargelimits={abs=0.5},
+%         axis line style={latex-latex},
+%         ticklabel style={font=\tiny},
+%         % yticklabels={,,},
+%         % xticklabels={,,}
+%     ]
+% \addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^2} node[left] {\(f(x)=x^2\)} ;
+% \addplot [domain=-10:10,color=draculagreen,samples=200, smooth, thin] { 3*x} node[left] {\(f(x)=3x\)} ;
+% \addplot [domain=-10:10,color=draculapurple,samples=200, smooth, thin] { 2*x} node[left] {\(f(x)=3x\)} ;
+% \addplot [domain=-10:10,color=draculayellow,samples=200, smooth, thin] { x} node[left] {\(f(x)=3x\)} ;
+% \addplot [domain=-10:10,color=draculapink,samples=200, smooth, thin] { (1/2)*x} node[left] {\(f(x)=3x\)} ;
+% % \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
+% % \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
+%     \addplot[color=draculared,only marks,mark=*] coordinates{(0,0)};
+%     \addplot[color=draculagreen,only marks,mark=*] coordinates{(3,9)};
+%     \addplot[color=draculapurple,only marks,mark=*] coordinates{(2,4)};
+%     \addplot[color=draculayellow,only marks,mark=*] coordinates{(1,1)};
+%     \addplot[color=draculapink,only marks,mark=*] coordinates{(1/2,1/4)};
+%     % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
+%   \end{axis}
+% \end{tikzpicture}
+% \newpage
+% \section*{\textbf{\color{draculaorange}Tangent Lines}}
+
+% The tangent line of a point \(P\) on a curve is a line which touches the curve
+% exactly once (locally), and is the "limit"of series of secant
+% lines with fixed "base point".
+
+% \begin{tikzpicture}[scale=3]
+%   \begin{axis} [
+%         domain=-10:10,
+%         xmin=-4, xmax=4,
+%         ymin=-10, ymax=10,
+%         grid=both,
+%         % grid style={line width=.08pt, draw=draculacomment!80},
+%         major grid style={line width=.5pt,draw=draculacomment},
+%         minor grid style={line width=.08pt,draw=draculacomment!80},
+%         axis lines=middle,
+%         % minor x tick num=3,
+%         % minor y tick num=4,
+%         enlargelimits={abs=0.5},
+%         axis line style={latex-latex},
+%         ticklabel style={font=\tiny},
+%         % yticklabels={,,},
+%         % xticklabels={,,}
+%     ]
+% \addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^2} node[left] {\(f(x)=x^2\)} ;
+% % \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { 4*x-4}  ;
+% % \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
+% % \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
+%     \addplot[color=draculared,only marks,mark=*] coordinates{(2,4)};
+%     % \addplot[color=draculapurple,only marks,mark=*] coordinates{(2,4)};
+%     % \addplot[color=draculayellow,only marks,mark=*] coordinates{(1,1)};
+%     % \addplot[color=draculagreen,only marks,mark=*] coordinates{(3,9)};
+%     % \addplot[color=draculapink,only marks,mark=*] coordinates{(1/2,1/4)};
+%     % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
+%   \end{axis}
+% \end{tikzpicture}
+
+% % \newpage
+% symbolically
+% \[\lim_{Q\to P}m_{QP}=m_P\]
+% \subsection*{\textbf{\color{draculared}Example:}}
+
+% for the case \(f(x)=x^2\)  and \(P=\LP\ 0,\ 0\RP\)
+% \[m_p=\lim _{x \rightarrow 0} \frac{x^2-0}{x-0}=\lim _{x \rightarrow 0} x=0\]
+% \subsection*{\textbf{\color{draculared}Example:}}
+% What's the tangent line of \(f(x)=x^2-1\) at \(P=\LP -1,2\RP\)
+% \newpage
+% \subsection*{\textbf{\color{draculared}Example:}}
+
+% Let \(f(x)=x^3-1\)
+% \begin{enumerate}
+% \item{  \begin{enumerate}
+%     \item{Graph \(f\) by hand.}
+%     \item{Let \(P=(1,0)\) eyeball \(m_P\)}
+%     \item{Estimate \(m_P\) algebraically.}
+%     \item{Write down the tangent line to \(P\).}
+%   \end{enumerate}}
+%   \item {Is there a \(Q\) where \(m_Q<0\)}
+% \end{enumerate}
+% \newpage
+
+% \subsection*{\textbf{\color{draculayellow}ICON Questions:}}
+% Discussion Question for ICON will be:
+% let $y=2 x+3$. Find tangent line at $P=(1,5)$.
+% What do you notice? Can you postulate a general rule for tangent lines of
+% linear functions?
+
+\section*{\textbf{\color{draculaorange}Limits}}
+
+\subsection*{\textbf{\color{draculaorange}Intuition of a limit}}
+
+Getting "close" and motivation
+
+\newpage
+\(\)
+\newpage
+\(\)
+\newpage
+
+\subsection*{\textbf{\color{draculaorange} "Definition"}}
+Let \(f:A\to \R\), where \(A\subseteq \R\). Let \(a\in A\)
+we write
+\[\lim_{x\to a^-} f(x)=L_-\]
+
+\[\lim_{x\to a^+} f(x)=L_+\]
+
+If \(L_+=L_-\) we can write
+\[\lim_{x\to a} f(x)=L\]
+
+\newpage
+\subsection*{\textbf{\color{draculared} Example:}}
+Find:\(\lim_{x\to a^-} f(x)=L_-\quad \lim_{x\to a^+} f(x)=L_+\quad\lim_{x\to a} f(x)=L\)\\
 \begin{tikzpicture}[scale=4]
   \begin{axis} [
         domain=-10:10,
-        xmin=-4, xmax=4,
-        ymin=-10, ymax=10,
-        grid=both,
-        % grid style={line width=.08pt, draw=draculacomment!80},
-        major grid style={line width=.5pt,draw=draculacomment},
-        minor grid style={line width=.08pt,draw=draculacomment!80},
-        axis lines=middle,
-        % minor x tick num=3,
-        % minor y tick num=4,
-        enlargelimits={abs=0.5},
-        axis line style={latex-latex},
-        ticklabel style={font=\tiny},
-        % yticklabels={,,},
-        % xticklabels={,,}
-    ]
-\addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^2} node[left] {\(f(x)=x^2\)} ;
-\addplot [domain=-10:10,color=draculared,samples=200, smooth, thick] { 4*x-4}  ;
-% \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
-% \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
-    \addplot[color=draculared,only marks,mark=*] coordinates{(2,4)};
-    % \addplot[color=draculapurple,only marks,mark=*] coordinates{(2,4)};
-    % \addplot[color=draculayellow,only marks,mark=*] coordinates{(1,1)};
-    % \addplot[color=draculagreen,only marks,mark=*] coordinates{(3,9)};
-    % \addplot[color=draculapink,only marks,mark=*] coordinates{(1/2,1/4)};
-    % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
-  \end{axis}
-\end{tikzpicture}
-\newpage
-\section*{\textbf{\color{draculaorange}Lines}}
-
-\subsection*{\textbf{\color{draculaorange}Algebraic}}
-
-\(\underline{\hspace{3cm}}=\underline{\hspace{3cm}}\cdot\underline{\hspace{3cm}}+\underline{\hspace{3cm}}\)
-\vskip2cm
-\subsection*{\textbf{\color{draculaorange}Geometric}}
-\begin{tikzpicture}[scale=2]
-  \begin{axis} [
-        domain=-10:10,
-        xmin=-10, xmax=10,
+        xmin=-5, xmax=5,
         ymin=-10, ymax=10,
         grid=both,
         % grid style={line width=.08pt, draw=draculacomment!80},
@@ -1233,20 +1470,73 @@
         % yticklabels={,,},
         % xticklabels={,,}
     ]
-% \addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^3};
+\addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^3-5*x} node[left] {\(f(x)=x^3-5x\)} ;;
 % \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
 % \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
-    \addplot[color=draculacyan,only marks,mark=*] coordinates{(5,1)};
-    \addplot[color=draculacyan,only marks,mark=*] coordinates{(-2,-4)};
+    % \addplot[color=draculacyan,only marks,mark=*] coordinates{(5,1)};
+    \addplot[color=draculared,only marks,mark=*] coordinates{(-2,2)};
     % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
   \end{axis}
 \end{tikzpicture}
 \newpage
-\section*{\textbf{\color{draculaorange}Secant Lines}}
-A line between two points on the graph of a function.\\
-
 \noindent
-\begin{tikzpicture}[scale=3.5]
+\begin{tikzpicture}[scale=4]
+  \begin{axis} [
+        domain=-10:10,
+        xmin=-3, xmax=-1,
+        ymin=1, ymax=3,
+        grid=both,
+        % grid style={line width=.08pt, draw=draculacomment!80},
+        major grid style={line width=.5pt,draw=draculacomment},
+        minor grid style={line width=.08pt,draw=draculacomment!80},
+        axis lines=middle,
+        minor tick num=4,
+        enlargelimits={abs=0.5},
+        axis line style={latex-latex},
+        ticklabel style={font=\tiny},
+        % yticklabels={,,},
+        % xticklabels={,,}
+    ]
+\addplot [domain=-3:-1,color=draculacyan,samples=200, smooth, thick] { x^3-5*x} node[left] {\(f(x)=x^3-5x\)} ;;
+% \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
+% \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
+    % \addplot[color=draculacyan,only marks,mark=*] coordinates{(5,1)};
+    \addplot[color=draculared,only marks,mark=*] coordinates{(-2,2)};
+    % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
+  \end{axis}
+\end{tikzpicture}
+\newpage
+\noindent
+\begin{tikzpicture}[scale=4]
+  \begin{axis} [
+        domain=-10:10,
+        xmin=-2.25, xmax=-1.75,
+        ymin=1.75, ymax=2.25,
+        grid=both,
+        % grid style={line width=.08pt, draw=draculacomment!80},
+        major grid style={line width=.5pt,draw=draculacomment},
+        minor grid style={line width=.08pt,draw=draculacomment!80},
+        axis lines=middle,
+        minor tick num=4,
+        enlargelimits={abs=0.5},
+        axis line style={latex-latex},
+        ticklabel style={font=\tiny},
+        % yticklabels={,,},
+        % xticklabels={,,}
+    ]
+\addplot [domain=-2.25:-1.75,color=draculacyan,samples=200, smooth, thick] { x^3-5*x} node[left] {\(f(x)=x^3-5x\)} ;;
+% \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
+% \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
+    % \addplot[color=draculacyan,only marks,mark=*] coordinates{(5,1)};
+    \addplot[color=draculared,only marks,mark=*] coordinates{(-2,2)};
+    % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
+  \end{axis}
+\end{tikzpicture}
+\newpage
+\subsection*{\textbf{\color{draculared} Example:}}
+Give me an example of a function/graph where
+\(\lim_{x\to a^-} f(x)\neq\lim_{x\to a^+} f(x)\)\\
+\begin{tikzpicture}[scale=4]
   \begin{axis} [
         domain=-10:10,
         xmin=-5, xmax=5,
@@ -1256,111 +1546,150 @@ A line between two points on the graph of a function.\\
         major grid style={line width=.5pt,draw=draculacomment},
         minor grid style={line width=.08pt,draw=draculacomment!80},
         axis lines=middle,
-        minor x tick num=1,
-        minor y tick num=4,
+        minor tick num=4,
         enlargelimits={abs=0.5},
         axis line style={latex-latex},
         ticklabel style={font=\tiny},
         % yticklabels={,,},
         % xticklabels={,,}
     ]
-\addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^3-4*x};
+% \addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^3-5*x} node[left] {\(f(x)=x^3-5x\)} ;;
 % \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
 % \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
-    \addplot[color=draculared,only marks,mark=*] coordinates{(-2,0)};
-    \addplot[color=draculapurple,only marks,mark=*] coordinates{(2,0)};
-    \addplot[color=draculapurple,only marks,mark=*] coordinates{(-2/3^.5,16*3^.5*9^-1)};
-    \addplot[color=draculapurple,only marks,mark=*] coordinates{(2/3^.5,-16*3^.5*9^-1)};
+    % \addplot[color=draculacyan,only marks,mark=*] coordinates{(5,1)};
+    % \addplot[color=draculared,only marks,mark=*] coordinates{(-2,2)};
     % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
   \end{axis}
 \end{tikzpicture}
-\newpage
-\subsection*{\textbf{\color{draculared}Example:}}
-\noindent
+\subsection*{\textbf{\color{draculared} Example:}}
+Find:\(\lim_{x\to a^-} f(x)=L_-\quad \lim_{x\to a^+} f(x)=L_+\quad\lim_{x\to a} f(x)=L\)\\
 \begin{tikzpicture}[scale=4]
   \begin{axis} [
         domain=-10:10,
-        xmin=-4, xmax=4,
+        xmin=-5, xmax=5,
         ymin=-10, ymax=10,
         grid=both,
         % grid style={line width=.08pt, draw=draculacomment!80},
         major grid style={line width=.5pt,draw=draculacomment},
         minor grid style={line width=.08pt,draw=draculacomment!80},
         axis lines=middle,
-        minor x tick num=3,
-        minor y tick num=4,
+        minor tick num=4,
         enlargelimits={abs=0.5},
         axis line style={latex-latex},
         ticklabel style={font=\tiny},
         % yticklabels={,,},
         % xticklabels={,,}
     ]
-\addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^2} node[left] {\(f(x)=x^2\)} ;
+\addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^3-5*x} node[left] {\(f(x)=x^3-5x\)} ;;
 % \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
 % \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
-    \addplot[color=draculared,only marks,mark=*] coordinates{(0,0)};
-    \addplot[color=draculapurple,only marks,mark=*] coordinates{(2,4)};
-    \addplot[color=draculayellow,only marks,mark=*] coordinates{(1,1)};
-    \addplot[color=draculagreen,only marks,mark=*] coordinates{(3,9)};
-    \addplot[color=draculapink,only marks,mark=*] coordinates{(1/2,1/4)};
-    % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
+    % \addplot[color=draculacyan,only marks,mark=*] coordinates{(5,1)};
+    \addplot[color=draculared,only marks,mark=*] coordinates{(-2,7)};
+    \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(-2,2)};
   \end{axis}
 \end{tikzpicture}
-
-\subsection*{\textbf{\color{draculaorange}Pattern}}
-
-Do the slopes have any pattern?
-
-\vskip3cm
-
-\subsubsection*{\textbf{\color{draculaorange}Algebra}}
-
-How do we write the rule as an ordered pair?
-\[\LP\ \underline{\hspace{3cm}}\ ,\ \underline{\hspace{3cm}}\ \RP \]
-\[\LP\ \underline{\hspace{3cm}}\ ,\ \underline{\hspace{3cm}}\ \RP \]
-
-If we write:
-\[P=\LP\ 0\ ,\ 0\ \RP \]
-\[Q=\LP\ \underline{\hspace{3cm}}\ ,\ \underline{\hspace{3cm}}\ \RP \]
-What is the slope for the line between \(P\) and \(Q\)? \(\underline{\hspace{3cm}}\)
-What have we done geometrically?
 \newpage
-
+\section*{\textbf{\color{draculaorange} Estimateing limits}}
+\subsection*{\textbf{\color{draculaorange} Graphically}}
 \begin{tikzpicture}[scale=4]
   \begin{axis} [
         domain=-10:10,
-        xmin=-4, xmax=4,
-        ymin=-10, ymax=10,
+        xmin=-10, xmax=10,
+        ymin=-.5, ymax=2,
         grid=both,
         % grid style={line width=.08pt, draw=draculacomment!80},
         major grid style={line width=.5pt,draw=draculacomment},
         minor grid style={line width=.08pt,draw=draculacomment!80},
         axis lines=middle,
-        minor x tick num=3,
-        minor y tick num=4,
+        minor tick num=4,
         enlargelimits={abs=0.5},
         axis line style={latex-latex},
         ticklabel style={font=\tiny},
         % yticklabels={,,},
         % xticklabels={,,}
     ]
-\addplot [domain=-10:10,color=draculacyan,samples=200, smooth, thick] { x^2} node[left] {\(f(x)=x^2\)} ;
-\addplot [domain=-10:10,color=draculagreen,samples=200, smooth, thin] { 3*x} node[left] {\(f(x)=3x\)} ;
-\addplot [domain=-10:10,color=draculapurple,samples=200, smooth, thin] { 2*x} node[left] {\(f(x)=3x\)} ;
-\addplot [domain=-10:10,color=draculayellow,samples=200, smooth, thin] { x} node[left] {\(f(x)=3x\)} ;
-\addplot [domain=-10:10,color=draculapink,samples=200, smooth, thin] { (1/2)*x} node[left] {\(f(x)=3x\)} ;
+\addplot [domain=-10:-.025,color=draculacyan,samples=200, smooth, thick] { sin(x r)/x};
+\addplot [domain=.025:10,color=draculacyan,samples=200, smooth, thick] { sin(x r)/x};
 % \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
 % \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
-    \addplot[color=draculared,only marks,mark=*] coordinates{(0,0)};
-    \addplot[color=draculagreen,only marks,mark=*] coordinates{(3,9)};
-    \addplot[color=draculapurple,only marks,mark=*] coordinates{(2,4)};
-    \addplot[color=draculayellow,only marks,mark=*] coordinates{(1,1)};
-    \addplot[color=draculapink,only marks,mark=*] coordinates{(1/2,1/4)};
-    % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(2,4)};
+    % \addplot[color=draculacyan,only marks,mark=*] coordinates{(5,1)};
+    % \addplot[color=draculared,only marks,mark=*] coordinates{(-2,7)};
+    % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(-2,2)};
   \end{axis}
 \end{tikzpicture}
 \newpage
-\section*{\textbf{\color{draculaorange}Tangent Lines}}
+\subsection*{\textbf{\color{draculaorange} Tabular}}
+  \begin{table*}[h]
+    \begin{tabular}{c | c | c | c | c}
+    $x$ & $\frac{\sin x}{x}$                   &\(\ \)&$x$ & $\frac{\sin x}{x}$                                             \\
+    \(\ \)& \(\ \)& \(\ \)& \(\ \)& \(\ \)\\ \hline
+    \(\ \)& \(\ \)& \(\ \)& \(\ \)& \(\ \)\\
+    $\pi   $         & 0                       &\(\ \)&$\m \pi   $         & 0                                              \\
+    \(\ \)& \(\ \)& \(\ \)& \(\ \)& \(\ \)\\ \hline
+    \(\ \)& \(\ \)& \(\ \)& \(\ \)& \(\ \)\\
+    $\frac{\pi }{ 2}$& $\frac{2}{\pi}$         &\(\ \)&$\m \frac{\pi }{ 2}$& $\frac{2}{\pi}\ $                                \\
+    \(\ \)& \(\ \)& \(\ \)& \(\ \)& \(\ \)\\ \hline
+    \(\ \)& \(\ \)& \(\ \)& \(\ \)& \(\ \)\\
+           $\frac{\pi }{ 4}$& $\frac{2\sqrt{2}}{\pi}$ &\(\ \)&$\m \frac{\pi }{ 4}$& $\frac{2\sqrt{2}}{\pi}\ $ \\
+    \(\ \)& \(\ \)& \(\ \)& \(\ \)& \(\ \)\\ \hline
+    \(\ \)& \(\ \)& \(\ \)& \(\ \)& \(\ \)\\
+    $\frac{\pi }{ 6}$ &$\frac{3}{\pi}$      &\(\ \)&$\m \frac{\pi }{ 6}$& $\frac{3}{\pi}$         \\
+    \(\ \)& \(\ \)& \(\ \)& \(\ \)& \(\ \)\\ \hline
+    \(\ \)& \(\ \)& \(\ \)& \(\ \)& \(\ \)\\
+    $\vdots$ &\(\vdots\)&\(\ \)&$\vdots$& $\vdots\ $ \\
+    \(\ \)& \(\ \)& \(\ \)& \(\ \)& \(\ \)\\ \hline
+    \(\ \)& \(\ \)& \(\ \)& \(\ \)& \(\ \)\\
+    $0$ &\(1\)&\(\ \)&$0$& $1\ $ \\
+    \end{tabular}
+    \end{table*}
+\newpage
+\subsection*{\textbf{\color{draculaorange} Algebraically}}
+Tomorrow
+\newpage
+\section*{\textbf{\color{draculaorange} Divergence}}
+\begin{tikzpicture}[scale=4]
 
+\begin{axis} [
+  domain=-10:10,
+  xmin=-10, xmax=10,
+  ymin=-10, ymax=10,
+  grid=both,
+  % grid style={line width=.08pt, draw=draculacomment!80},
+  major grid style={line width=.5pt,draw=draculacomment},
+  minor grid style={line width=.08pt,draw=draculacomment!80},
+  axis lines=middle,
+  minor tick num=4,
+  enlargelimits={abs=0.5},
+  axis line style={latex-latex},
+  ticklabel style={font=\tiny},
+  % yticklabels={,,},
+  % xticklabels={,,}
+]
+\addplot [domain=-10:-.025,color=draculacyan,samples=200, smooth, thick] { -1/x};
+\addplot [domain=.025:10,color=draculacyan,samples=200, smooth, thick] { 1/x};
+% \addplot [domain=-10:10,color=draculared,samples=200, smooth, thin] { x};
+% \addplot [domain=0:10,color=draculacyan, smooth, thin] { x^(1/2)};
+% \addplot[color=draculacyan,only marks,mark=*] coordinates{(5,1)};
+% \addplot[color=draculared,only marks,mark=*] coordinates{(-2,7)};
+% \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(-2,2)};
+\end{axis}
+\end{tikzpicture}
+\newpage
+\subsection*{\textbf{\color{draculaorange} Definition}}
+
+Let $\lim _{x \rightarrow a} f(x)$ exist. The limit is said to diverge if
+$\abs{f(x)} $ gets arbitrarily large as $x\to a$. \\
+There are a few cases:
+\begin{enumerate}
+  \item {$\lim _{x \rightarrow a^-}-f(x)=\infty$}
+  \item{$\lim _{x \rightarrow a^{-}} f(x)=-\infty$}
+  \item {$\lim _{x \rightarrow a^+}-f(x)=\infty$}
+  \item{$\lim _{x \rightarrow a^{+}} f(x)=-\infty$}
+  \item {$\lim _{x \rightarrow a}-f(x)=\infty$}
+  \item{$\lim _{x \rightarrow a} f(x)=-\infty$}
+\end{enumerate}
+These are culled vertical asymptotes.
+\subsection*{\textbf{\color{draculared} Question:}}
+What are some examples for each of the above?
 
 \end{document}
