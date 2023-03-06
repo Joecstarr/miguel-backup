@@ -1693,106 +1693,168 @@
 % What are some examples for each of the above?
 
 
-\section*{\textbf{\color{draculaorange}Limits}}
+% \section*{\textbf{\color{draculaorange}Limits}}
 
-\subsection*{\textbf{\color{draculaorange}Algebra}}
-\subsection*{\textbf{\color{draculaorange}Limit Laws}}
+% \subsection*{\textbf{\color{draculaorange}Algebra}}
+% \subsection*{\textbf{\color{draculaorange}Limit Laws}}
 
-\begin{enumerate}
-  \item{\[\lim _{x \rightarrow a}(f+g)(x)=\lim _{x \rightarrow a}[f(x)+g(x)]=\lim _{x \rightarrow a} f(x)+\lim _{x \rightarrow a} g(x) \]}
-  \item{\[\lim _{x \rightarrow a}(f-g)(x)=\lim _{x \rightarrow a}[f(x)-g(x)]=\lim _{x \rightarrow a} f(x)-\lim _{x \rightarrow a} g(x) \]}
-  \item{\[\lim _{x \rightarrow a}(fg)(x)=\lim _{x \rightarrow a}[f(x) g(x)]=\lim _{x \rightarrow a} f(x) \cdot \lim _{x \rightarrow a} g(x) \]}
-  \newpage\[\ \]
-  \item{\[\lim _{x \rightarrow a} \LP\frac{f}{g}\RP(x)=\lim _{x \rightarrow a} \frac{f(x)}{g(x)}=\frac{\lim _{x \rightarrow a} f(x)}{\lim _{x \rightarrow a} g(x)} \text { if } \lim _{x \rightarrow a} g(x) \neq 0\]}
-  \item{\[\lim _{x \rightarrow a}c f(x)=c \lim _{x \rightarrow a} f(x) \]}
-  \item{\[\lim _{x \rightarrow a} f(y)=f(y)\]}
-  \item{\[\lim _{x \rightarrow c} x=a\]}
-\end{enumerate}
-\newpage
-\subsection*{\textbf{\color{draculared}Example:}}
-let \(f(x)=\sin\LP x\RP\), \(g(x)=x\), and \(h(x)=\cos (\pi / 4-x)\)
-\begin{enumerate}
-  \item{\[\lim _{x \rightarrow 0} \LP\frac{f}{g}\RP(x)=?\]}
-  \item{\[\lim _{x \rightarrow 0} h(x)=?\]}
-  \item{\[\lim _{x \rightarrow 0} \LB\frac{f(x)h(x)}{g(x)}\RB=?\]}
-  \item{\[\lim _{x \rightarrow 0} \LB\frac{f(x)}{g(x)}+h(x)\RB=?\]}
-  \item{\[\lim _{x \rightarrow 0} \LB\frac{f(x)}{g(x)h(x)}\RB=?\]}
-\end{enumerate}
-\newpage
-\newpage
-\subsection*{\textbf{\color{draculared}Example:}}
-True/False:
-\[\left(\lim _{x \to a} f(x)\right)^n=\lim _{x \to a}\LP f(x)\RP^n\]
-Convince me.
-\newpage
-\subsection*{\textbf{\color{draculared}Example:}}
-True/False:
-\[\left(\lim _{x \to a} f(x)\right)^{\frac{1}{n}}=\lim _{x \to a}\LP f(x)\RP^{\frac{1}{n}}\]
-Convince me.
-\newpage
-\subsection*{\textbf{\color{draculaorange}Direct Substitution}}
-Sometimes we can evaluate a limit by direct substitution, ie: by
-simply playing in a for $x$
-\subsection*{\textbf{\color{draculared}Example:}}
-\(f(x)=x^2+x+4\)
-\[\lim_{x \rightarrow 1} f(x)=\]
-\newpage
-\subsection*{\textbf{\color{draculared}Example:}}
-Convince me that a polynomial \(p(x)\) we can always solve
-\[\lim_{x \rightarrow a} p(x)\]
-by substitution.
-\newpage
-\subsection*{\textbf{\color{draculaorange}Cancelation}}
+% \begin{enumerate}
+%   \item{\[\lim _{x \rightarrow a}(f+g)(x)=\lim _{x \rightarrow a}[f(x)+g(x)]=\lim _{x \rightarrow a} f(x)+\lim _{x \rightarrow a} g(x) \]}
+%   \item{\[\lim _{x \rightarrow a}(f-g)(x)=\lim _{x \rightarrow a}[f(x)-g(x)]=\lim _{x \rightarrow a} f(x)-\lim _{x \rightarrow a} g(x) \]}
+%   \item{\[\lim _{x \rightarrow a}(fg)(x)=\lim _{x \rightarrow a}[f(x) g(x)]=\lim _{x \rightarrow a} f(x) \cdot \lim _{x \rightarrow a} g(x) \]}
+%   \newpage\[\ \]
+%   \item{\[\lim _{x \rightarrow a} \LP\frac{f}{g}\RP(x)=\lim _{x \rightarrow a} \frac{f(x)}{g(x)}=\frac{\lim _{x \rightarrow a} f(x)}{\lim _{x \rightarrow a} g(x)} \text { if } \lim _{x \rightarrow a} g(x) \neq 0\]}
+%   \item{\[\lim _{x \rightarrow a}c f(x)=c \lim _{x \rightarrow a} f(x) \]}
+%   \item{\[\lim _{x \rightarrow a} f(y)=f(y)\]}
+%   \item{\[\lim _{x \rightarrow c} x=a\]}
+% \end{enumerate}
+% \newpage
+% \subsection*{\textbf{\color{draculared}Example:}}
+% let \(f(x)=\sin\LP x\RP\), \(g(x)=x\), and \(h(x)=\cos (\pi / 4-x)\)
+% \begin{enumerate}
+%   \item{\[\lim _{x \rightarrow 0} \LP\frac{f}{g}\RP(x)=?\]}
+%   \item{\[\lim _{x \rightarrow 0} h(x)=?\]}
+%   \item{\[\lim _{x \rightarrow 0} \LB\frac{f(x)h(x)}{g(x)}\RB=?\]}
+%   \item{\[\lim _{x \rightarrow 0} \LB\frac{f(x)}{g(x)}+h(x)\RB=?\]}
+%   \item{\[\lim _{x \rightarrow 0} \LB\frac{f(x)}{g(x)h(x)}\RB=?\]}
+% \end{enumerate}
+% \newpage
+% \newpage
+% \subsection*{\textbf{\color{draculared}Example:}}
+% True/False:
+% \[\left(\lim _{x \to a} f(x)\right)^n=\lim _{x \to a}\LP f(x)\RP^n\]
+% Convince me.
+% \newpage
+% \subsection*{\textbf{\color{draculared}Example:}}
+% True/False:
+% \[\left(\lim _{x \to a} f(x)\right)^{\frac{1}{n}}=\lim _{x \to a}\LP f(x)\RP^{\frac{1}{n}}\]
+% Convince me.
+% \newpage
+% \subsection*{\textbf{\color{draculaorange}Direct Substitution}}
+% Sometimes we can evaluate a limit by direct substitution, ie: by
+% simply playing in a for $x$
+% \subsection*{\textbf{\color{draculared}Example:}}
+% \(f(x)=x^2+x+4\)
+% \[\lim_{x \rightarrow 1} f(x)=\]
+% \newpage
+% \subsection*{\textbf{\color{draculared}Example:}}
+% Convince me that a polynomial \(p(x)\) we can always solve
+% \[\lim_{x \rightarrow a} p(x)\]
+% by substitution.
+% \newpage
+% \subsection*{\textbf{\color{draculaorange}Cancelation}}
 
-What about \(f(x)=x-1\)
-\[\lim_{x\to 1} \frac{f(x)}{f(x)}=?\]
-\vskip 5cm
-When we have a rational expression, we can cancel like terms in the
-numerator and denominator.
-\newpage
-\subsection*{\textbf{\color{draculared}Example:}}
-\begin{align*}
-   \lim _{x \rightarrow 2} \frac{x^2-x-2}{x^2+x-6}
-  & =\lim _{x \rightarrow 2} \frac{(x-2)(x+1)}{(x-2)(x+3)} \\
-  & \\
-  & =\lim _{x \rightarrow 2} \frac{x+1}{x+3}\\
-  & \\
-  &=\frac{3}{5}
-\end{align*}
-\subsection*{\textbf{\color{draculared}Example:}}
-\[\lim _{x \rightarrow-2} \frac{x^2+x-2}{x^2+2 x}=?\]
-\newpage
-\subsection*{\textbf{\color{draculaorange}"Simplification"}}
-Change the way the problem looks
-\subsubsection*{\textbf{\color{draculaorange}Conjugate}}
-Difference of squares
-\[\LP \underline{\hspace{3cm}}\RP\LP \underline{\hspace{3cm}}\RP=\underline{\hspace{3cm}}\]
-gives us that
-\[\frac{1}{a+\sqrt{b}}=\frac{a-\sqrt{b}}{a^2-\LP\sqrt{b}\RP^2}\]
-\textbf{\color{draculapurple}NOTE: This is super common in limit problems}
-\newpage
-\subsection*{\textbf{\color{draculared}Example:}}
-\[\lim _{h+0} \frac{\sqrt{h^2+4}-3}{h^2}\]
-\newpage
-\section*{\textbf{\color{draculaorange}DCT}}
-Let $f(x) \leq g(x) \quad \forall x \in \operatorname{Domain}(f)$.
-Let $a \in\operatorname{Domain}(f) \cap\operatorname{Domain}(g)$.
-If $\lim _{x \rightarrow a} f(x)$ and $\lim _{x \rightarrow a} g(x)$ exist, then
-$$\lim _{x \rightarrow a} f(x) \leq \lim _{x \rightarrow a} g(x)$$
-Note: We allow $\infty \leq \infty$ and
-$-\infty \leq \infty$ but $\infty \notin-\infty$
-\newpage
-\subsection*{\textbf{\color{draculaorange}Squeeze}}
-\begin{itemize}
-  \item{Let $f(x), g(x), h(x)$ all have \(a\) in their domain.}
-  \item{Suppose the limit $x \rightarrow a$ exists for $f(x), g(x), h(x)$ with
-   $$\lim _{x \rightarrow a} f(x)=L_1$$
-   $$\lim _{x \to a} h(x)=L_2$$
-   }
-  \item{If $f(x) \leq g(x) \leq h(x)$ then
-  \[L_1\leq \lim _{x \to a} g(x)\leq L_2\]}
-  \item{In particular, if $L_1=L_2=L $ then $ \lim _{x \rightarrow a} g(x)=L$}
-\end{itemize}
+% What about \(f(x)=x-1\)
+% \[\lim_{x\to 1} \frac{f(x)}{f(x)}=?\]
+% \vskip 5cm
+% When we have a rational expression, we can cancel like terms in the
+% numerator and denominator.
+% \newpage
+% \subsection*{\textbf{\color{draculared}Example:}}
+% \begin{align*}
+%    \lim _{x \rightarrow 2} \frac{x^2-x-2}{x^2+x-6}
+%   & =\lim _{x \rightarrow 2} \frac{(x-2)(x+1)}{(x-2)(x+3)} \\
+%   & \\
+%   & =\lim _{x \rightarrow 2} \frac{x+1}{x+3}\\
+%   & \\
+%   &=\frac{3}{5}
+% \end{align*}
+% \subsection*{\textbf{\color{draculared}Example:}}
+% \[\lim _{x \rightarrow-2} \frac{x^2+x-2}{x^2+2 x}=?\]
+% \newpage
+% \subsection*{\textbf{\color{draculaorange}"Simplification"}}
+% Change the way the problem looks
+% \subsubsection*{\textbf{\color{draculaorange}Conjugate}}
+% Difference of squares
+% \[\LP \underline{\hspace{3cm}}\RP\LP \underline{\hspace{3cm}}\RP=\underline{\hspace{3cm}}\]
+% gives us that
+% \[\frac{1}{a+\sqrt{b}}=\frac{a-\sqrt{b}}{a^2-\LP\sqrt{b}\RP^2}\]
+% \textbf{\color{draculapurple}NOTE: This is super common in limit problems}
+% \newpage
+% \subsection*{\textbf{\color{draculared}Example:}}
+% \[\lim _{h+0} \frac{\sqrt{h^2+4}-3}{h^2}\]
+% \newpage
+% \section*{\textbf{\color{draculaorange}DCT}}
+% Let $f(x) \leq g(x) \quad \forall x \in \operatorname{Domain}(f)$.
+% Let $a \in\operatorname{Domain}(f) \cap\operatorname{Domain}(g)$.
+% If $\lim _{x \rightarrow a} f(x)$ and $\lim _{x \rightarrow a} g(x)$ exist, then
+% $$\lim _{x \rightarrow a} f(x) \leq \lim _{x \rightarrow a} g(x)$$
+% Note: We allow $\infty \leq \infty$ and
+% $-\infty \leq \infty$ but $\infty \notin-\infty$
+% \newpage
+% \subsection*{\textbf{\color{draculaorange}Squeeze}}
+% \begin{itemize}
+%   \item{Let $f(x), g(x), h(x)$ all have \(a\) in their domain.}
+%   \item{Suppose the limit $x \rightarrow a$ exists for $f(x), g(x), h(x)$ with
+%    $$\lim _{x \rightarrow a} f(x)=L_1$$
+%    $$\lim _{x \to a} h(x)=L_2$$
+%    }
+%   \item{If $f(x) \leq g(x) \leq h(x)$ then
+%   \[L_1\leq \lim _{x \to a} g(x)\leq L_2\]}
+%   \item{In particular, if $L_1=L_2=L $ then $ \lim _{x \rightarrow a} g(x)=L$}
+% \end{itemize}
 
-NOTE: This is often used for trig functions.
+% NOTE: This is often used for trig functions.
+
+
+\subsection*{\textbf{\color{draculaorange}Absolute value}}
+
+Absolute value measures distance.\\
+
+So \(\abs{1}=\abs{1-0}=1\) says, \textit{\color{draculayellow}the distance between "1" and "0"
+is \(1\).}
+
+If we write \(\abs{2-1}=1\) we can say, \textit{\color{draculayellow}the distance between "2" and "1"
+is \(1\).}
+
+If we write \(\abs{2-a}\) we can say, \textit{\color{draculayellow}the distance between "2" and "a".}
+
+
+If we write \(\abs{2-a}<\varepsilon\) we can say, \textit{\color{draculayellow}the distance between "2" and "a" is less than epsilon (\(\varepsilon\)).}
+
+
+\newpage
+\section*{\textbf{\color{draculaorange}Formal Definition}}
+
+Let \(f:A\to \R\),  where \(A\subseteq \R\) and \(a\in A\) an
+\textit{\color{draculapink}interior point}. We say
+\[\lim_{x\to a} f(x)=L\]
+if \(\forall\ \varepsilon>0\), \(\exists\ \delta>0\) such that, if
+\[\abs{x-a}<\delta\]
+then
+\[\abs{f(x)-f(a)}<\varepsilon.\]
+
+We pick a number and call it \(\varepsilon\), any number we want.
+Based on epsilon we pick a number \(\delta\) so that for
+any number \(x\) in the interval \(a- \delta<x<a+\delta\),
+\(\abs{f(x)-f(a)}<\varepsilon\).
+\newpage
+
+\begin{tikzpicture}[scale=4]
+  \begin{axis} [
+        domain=-10:10,
+        xmin=-5, xmax=5,
+        ymin=-5, ymax=5,
+        grid=both,
+        % grid style={line width=.08pt, draw=draculacomment!80},
+        major grid style={line width=.5pt,draw=draculacomment},
+        minor grid style={line width=.08pt,draw=draculacomment!80},
+        axis lines=middle,
+        % minor tick num=4,
+        enlargelimits={abs=0.5},
+        axis line style={latex-latex},
+        ticklabel style={font=\tiny},
+        % yticklabels={,,},
+        % xticklabels={,,}
+    ]
+      \addplot [domain=-5:5,color=draculacyan,samples=200, smooth, thick] { x^3-5*x+1};
+      \addplot [domain=-5:5,color=draculacyan,samples=200, smooth, thick] { x^3-5*x+1};
+      \addplot[color=draculapink,thick,dashed] coordinates { (-6,-3.125) (6,-3.125) };
+      \addplot[color=draculaorange,thick,dashed] coordinates { (1.5,-6) (1.5,6) };
+      \addplot[color=draculared,only marks,mark=*] coordinates{(1.5,-3.125)};
+
+    % \addplot +[mark=none] coordinates {(1.5, -5) (1.5, 5)};
+    % \addplot[color=draculared,fill=draculabg,only marks,mark=*] coordinates{(-2,2)};
+  \end{axis}
+\end{tikzpicture}
 \end{document}
